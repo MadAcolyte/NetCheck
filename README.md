@@ -1,24 +1,24 @@
-PowerShell script for checking network connections
+#PowerShell script for checking network connections
 
-Purpose
+#Purpose
 Automates inspection of network connections and integrates with AbuseIPDB to identify potentially malicious hosts. Demonstrates PowerShell proficiency, API integration, and network analysis.
 
-Key Functions
+#Key Functions
 
-Enumerates established TCP connections bound to the active IPv4 interface.
+-Enumerates established TCP connections bound to the active IPv4 interface.
 
-Filters out trusted private networks and common service ports.
+-Filters out trusted private networks and common service ports.
 
-Queries AbuseIPDB API for threat intelligence on remote IPs.
+-Queries AbuseIPDB API for threat intelligence on remote IPs.
 
-Displays confidence scores with color-coded feedback.
+-Displays confidence scores with color-coded feedback.
 
-Interactive menu to inspect multiple connections sequentially.
+-Interactive menu to inspect multiple connections sequentially.
 
-Technical Highlights
+#Technical Highlights
 
-Implements parameter validation, structured output, and optional color highlighting.
+-Implements parameter validation, structured output, and optional color highlighting.
 
-Uses PowerShell cmdlets: Get-NetTCPConnection, Invoke-WebRequest, Get-Process.
+-Uses PowerShell cmdlets: Get-NetTCPConnection, Invoke-WebRequest, Get-Process.
 
-Applies REST API interaction and JSON parsing via ConvertFrom-Json.
+-Applies REST API interaction and JSON parsing via ConvertFrom-Json.
